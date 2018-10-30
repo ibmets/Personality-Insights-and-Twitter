@@ -1,0 +1,22 @@
+{
+  "name": "personality-insights-demo",
+  "version": "1.0.0",
+  "description": "Twitter Personality Insights Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ibmets/Personality-Insights-and-Twitter.git"
+  },
+  "author": "rosie.lickorish@uk.ibm.com",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^3.1.2",
+    "dotenv": "^6.0.0",
+    "json2csv": "^3.7.3",
+    "mkdirp": "^0.5.1",
+    "request": "^2.81.0"
+  }
+}
