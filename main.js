@@ -32,9 +32,7 @@ function getInsight(twitterErr, twitterData, player){
       for(let i=0; i < twitterData.length; i ++){
         twitterData[i].text = twitterData[i].text.replace(/https.+/g,'')
         let contentObject = {
-          // twitterData[i].text = twitterData[i].text.replace(/https.+/g,'')
           content: twitterData[i].text,
-          // date: twitterData[i].created_at,
         };
         tweets.push(contentObject);
       }
@@ -95,7 +93,6 @@ function writeCsvDataTofile(file, data, fields, callback){
 }
 
 function writeTweetsTofile(file, data, fields, callback) {
-  // console.log(data)
   let getDirName = require('path').dirname;
   mkdirp(getDirName(file), function(err){
     if(err){
